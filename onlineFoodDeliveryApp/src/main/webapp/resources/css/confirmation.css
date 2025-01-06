@@ -1,0 +1,150 @@
+/* Style for the confirmation page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    width: 100%; /* Ensure the navbar spans the full width */
+    box-sizing: border-box;
+    position: fixed; /* Make the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .app-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar .profile .icon {
+    background-color: #555;
+    color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.navbar .profile .profile-card {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 200px;
+}
+
+.navbar .profile:hover .profile-card {
+    display: block;
+}
+
+
+.confirmation-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-header {
+    background-color: #28a745;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.confirmation-header h1 {
+    margin: 0;
+}
+
+.order-summary {
+    padding: 20px;
+}
+
+.order-summary h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.grand-total {
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+.order-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.confirm-button, .cancel-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.confirm-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.confirm-button:hover {
+    background-color: #218838;
+}
+
+.cancel-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #c82333;
+}

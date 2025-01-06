@@ -1,0 +1,122 @@
+/* General reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #ff5722;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.card {
+    background-color: white;
+    padding: 15px; /* Reduced padding for compactness */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px; /* Reduced width to fit the page */
+    margin: 0 auto;
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ff5722;
+    font-size: 1.3rem; /* Reduced font size */
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 0.85rem; /* Slightly smaller label size */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 6px; /* Reduced padding for compactness */
+    margin-bottom: 10px; /* Reduced spacing between fields */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 0.85rem; /* Reduced font size for inputs */
+    height: 35px; /* Slightly smaller height */
+}
+
+input:focus, textarea:focus {
+    border-color: #ff5722;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 35px; /* Made address box the same height as input fields */
+}
+
+input::placeholder, textarea::placeholder {
+    color: #999;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 8px; /* Reduced padding for compactness */
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.register-btn:hover {
+    background-color: #e64a19;
+}
+
+.login-link {
+    text-align: center;
+    font-size: 0.85rem; /* Reduced font size for the login link */
+}
+
+.login-link a {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.8rem;
+}

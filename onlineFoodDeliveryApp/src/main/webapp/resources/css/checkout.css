@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    width: 100%; /* Ensure the navbar spans the full width */
+    box-sizing: border-box;
+    position: fixed; /* Make the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .app-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar .profile .icon {
+    background-color: #555;
+    color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.navbar .profile .profile-card {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 200px;
+}
+
+.navbar .profile:hover .profile-card {
+    display: block;
+}
+
+/* Container Styling */
+.container {
+    margin-top: 80px; /* Give space for the navbar */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+/* Heading Styling */
+.heading {
+    text-align: center;
+    color: #ff5722;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Form Styling */
+.order-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    background-color: #fff6f0;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #ff5722;
+    box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
+}
+
+/* Button Styling */
+.btn-confirm {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.btn-confirm:hover {
+    background-color: #e64a19;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .btn-confirm {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

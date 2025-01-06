@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar .app-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar .profile .icon {
+    background-color: #555;
+    color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.navbar .profile .profile-card {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 200px;
+}
+
+.navbar .profile:hover .profile-card {
+    display: block;
+}
+
+.welcome {
+    margin: 20px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.card {
+    flex: 1 1 calc(25% - 20px); /* Decreased width to 25% */
+    max-width: calc(25% - 20px);
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 450px; /* Increased height to 450px */
+    transition: transform 0.2s ease-in-out;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 190px; 
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    display:block;
+}
+
+.card .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card .info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #ff5722; /* Updated title color */
+    text-align: center;
+}
+
+.card .info .details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card .info .left-details {
+    flex: 1;
+}
+
+.card .info .left-details .chip {
+    background-color: #ff5722;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.card .info .left-details .address {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.card .info .left-details .status {
+    font-size: 14px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.card .info .left-details .status.closed {
+    color: #dc3545;
+}
+
+.card .info .right-details {
+    text-align: right;
+}
+
+.card .info .right-details .ratings {
+    font-size: 14px;
+    color: #f39c12;
+    margin-bottom: 5px;
+}
+
+.card .info .right-details .delivery-time {
+    font-size: 12px;
+    color: #333;
+}
+
+.card .menu-button {
+    display: block;
+    margin: 15px auto 0;
+    padding: 10px 20px;
+    background-color: #ff5722; /* Changed button color */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    width: fit-content;
+}
+
+.card .menu-button:hover {
+    background-color: #e64a19; /* Slightly darker hover effect */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff5722;
+    color: white;
+    font-size: 14px;
+}

@@ -1,0 +1,146 @@
+/* General reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header styling */
+header {
+    background-color: #ff5722;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed; /* Keep header fixed at top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Form container styling */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 80px 20px 20px; /* Adjusted padding to avoid overlap with header */
+}
+
+/* Card styling */
+.card {
+    background-color: white;
+    padding: 20px; /* Increased padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px; /* Increased width */
+    margin: 0 auto;
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 15px; /* Increased margin */
+    color: #ff5722;
+    font-size: 1.5rem; /* Increased font size */
+    font-weight: bold;
+}
+
+/* Label styling */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 0.85rem;
+}
+
+/* Input and textarea styling */
+input, textarea {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 0.85rem;
+    height: 35px;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff5722;
+    outline: none;
+}
+
+/* Adjust textarea for address field */
+textarea {
+    resize: none;
+    height: 35px;
+}
+
+/* Placeholder styling */
+input::placeholder, textarea::placeholder {
+    color: #999;
+}
+
+/* Button styling */
+button.login-btn {
+    width: 100%;
+    padding: 8px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+button.login-btn:hover {
+    background-color: #e64a19;
+}
+
+/* Link styling for register link */
+.login-link {
+    text-align: center;
+    font-size: 0.75rem; /* Reduced font size for the login link */
+}
+
+.login-link a {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: none; /* Removed underline on hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

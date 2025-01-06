@@ -1,0 +1,217 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar .app-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .actions {
+    display: flex;
+    gap: 10px;
+    margin-right: 15px; /* Space between actions and profile icon */
+    align-items: center; /* Vertical alignment with profile icon */
+}
+
+.navbar .actions .btn {
+    padding: 8px 15px;
+    background-color: white;
+    color: #ff5722;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.navbar .actions .btn:hover {
+    background-color: #ff5722;
+    color: white;
+    border: 2px solid white;
+    transform: scale(1.05);
+}
+
+.navbar .profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar .profile .icon {
+    background-color: #555;
+    color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar .profile .profile-card {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 200px;
+    z-index: 100;
+}
+
+.navbar .profile:hover .profile-card {
+    display: block;
+}
+
+/* To ensure alignment for buttons and profile */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+	
+
+
+
+.menu-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.menu-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.menu-container h1 span {
+    color: #ff5722;
+}
+
+/* Cards Container */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-card {
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    color: #ff5722;
+    margin: 10px 0;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.card-content .menu-price {
+    font-weight: bold;
+    color: #333;
+}
+
+.card-content .menu-status {
+    font-weight: bold;
+}
+
+.card-content .menu-status.available {
+    color: #28a745;
+}
+
+.card-content .menu-status.not-available {
+    color: #dc3545;
+}
+
+.card-content .menu-description {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.add-to-cart {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5722;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #e64a19;
+}
+
+/* No Menu */
+.no-menu {
+    margin: 50px 0;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-card {
+        width: 100%;
+    }
+}

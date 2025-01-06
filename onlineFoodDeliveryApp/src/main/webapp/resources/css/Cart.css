@@ -1,0 +1,184 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Container for the Cart Page */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Empty Cart Message */
+.empty-cart {
+    text-align: center;
+    padding: 50px;
+}
+
+.empty-cart p {
+    font-size: 1.5em;
+    color: #555;
+}
+
+.empty-cart button {
+    background-color: #4CAF50; /* Updated color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.empty-cart button:hover {
+    background-color: #45A049; /* Hover effect */
+}
+
+/* Cart Items Section */
+.cart-items {
+    margin-top: 20px;
+}
+
+/* Each Item in Cart */
+.cart-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Item Details */
+.item-details h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.item-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Item Actions (Quantity update and Remove buttons) */
+.item-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Button Styles for Decrease, Increase, and Remove */
+.item-actions form button {
+    margin: 0 5px;
+    background-color: #2196F3; /* Updated color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item-actions form button:hover {
+    background-color: #1976D2; /* Hover effect */
+}
+
+/* Quantity display styling */
+.item-actions span {
+    font-size: 1.2em;
+    margin: 0 10px;
+    color: #333;
+}
+
+/* Cart Summary Section */
+.cart-summary {
+    text-align: right;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Buttons in Cart Summary (Add More, Proceed to Checkout, Clear Cart) */
+.cart-summary button,
+.menu-button,
+.clear-cart-button {
+    background-color: #FF9800; /* Updated color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cart-summary button:hover,
+.menu-button:hover,
+.clear-cart-button:hover {
+    background-color: #FB8C00; /* Hover effect */
+}
+
+/* Clear Cart Button Styles */
+.clear-cart-button {
+    background-color: #F44336; /* Updated color */
+}
+
+.clear-cart-button:hover {
+    background-color: #D32F2F; /* Hover effect */
+}
+
+/* Proceed to Checkout Button Styles */
+.checkout-button {
+    background-color: #4CAF50; /* Updated color */
+}
+
+.checkout-button:hover {
+    background-color: #45A049; /* Hover effect */
+}
+
+/* Remove underline from anchor tags */
+.empty-cart button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .cart-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item-actions form button {
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .cart-summary button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
